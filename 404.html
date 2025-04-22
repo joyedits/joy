@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found</title>
+    <style>
+        /* Google Fonts */
+        @import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Montserrat+Alternates:wght@400;500;600&display=swap");
+
+        /* Variables */
+        :root {
+            --hue: 14;
+            --first-color: hsl(var(--hue), 80%, 49%);
+            --first-color-alt: hsl(var(--hue), 76%, 45%);
+            --white-color: hsl(0, 0%, 98%);
+            --black-color: hsl(0, 0%, 1%);
+            --text-color: hsl(var(--hue), 2%, 66%);
+            --body-color: hsl(var(--hue), 100%, 1%);
+            --container-color: hsl(var(--hue), 2%, 10%);
+            --conic-gradient: conic-gradient(from 150deg at 50% 45%, hsl(var(--hue), 80%, 20%) 0deg, hsl(var(--hue), 80%, 48%) 140deg, hsl(var(--hue), 80%, 20%) 360deg);
+
+            --body-font: "Montserrat Alternates", sans-serif;
+            --second-font: "Grechen Fuemen", cursive;
+            --biggest-font-size: 2.5rem;
+            --h1-font-size: 1.5rem;
+            --h2-font-size: 1.25rem;
+            --h3-font-size: 1rem;
+            --normal-font-size: .938rem;
+            --small-font-size: .813rem;
+            --smaller-font-size: .75rem;
+
+            --font-regular: 400;
+            --font-medium: 500;
+            --font-semi-bold: 600;
+
+            --z-tooltip: 10;
+            --z-fixed: 100;
+        }
+
+        /* Base */
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--body-font);
+            font-size: var(--normal-font-size);
+            background-color: var(--body-color);
+            color: var(--white-color);
+            overflow: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--white-color);
+            font-weight: var(--font-semi-bold);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* 404 Page */
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .card {
+            width: 75%;
+            max-width: 364px;
+            padding: 24px;
+            background: var(--container-color);
+            border-radius: 8px;
+            box-shadow: 0 1px 10px 0 rgb(53 58 62 / 6%), 0 2px 4px 0 rgb(53 58 62 / 8%);
+            border: 1px solid hsl(0, 0%, 20%);
+            margin: auto;
+        }
+
+        .card h1 {
+            font-size: 1.375rem;
+            line-height: 1;
+        }
+
+        .card p {
+            font-size: var(--normal-font-size);
+        }
+
+        .card hr {
+            border: 0;
+            height: 1px;
+            background: hsl(0, 0%, 20%);
+            margin: 16px 0;
+        }
+
+        .card a {
+            color: var(--first-color);
+            font-weight: var(--font-semi-bold);
+            text-decoration: underline;
+            transition: color .4s;
+        }
+
+        .card a:hover {
+            color: var(--first-color-alt);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+            <h1>Page Not Found</h1>
+            <p>Looks like you’ve followed a broken link or entered a URL that doesn’t exist on this site.</p>
+            <hr />
+            <p class="your-site">
+                Return to <a href="index.html">Joy's Portfolio</a> or check our
+                <a href="index.html#contact">Contact Page</a> to get in touch.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
